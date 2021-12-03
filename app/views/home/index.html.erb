@@ -1,0 +1,42 @@
+<%= stylesheet_link_tag 'home', media: 'all', 'data-turbolinks' => true %>
+<header class="nav-bar">
+        <div id="logo" style="width: 100%;"> 
+            <a href="<%= root_path %>">
+                <img class="logo" src="<%= asset_path 'logo.png' %>" />
+            </a>
+        </div>
+        <ul class="nav-list" id="navi-list">
+            <li class="list-item">
+                <a href="<%= player_index_path %>">Project</a>
+            </li>
+            <li class="list-item">
+                <a href="#">Gallery</a>
+            </li>
+            <li class="list-item">
+                <a href="#">Memories</a>
+            </li>
+            <li class="list-item">
+                <a href="<%= contact_index_path %>">Contact</a>
+            </li>
+        </ul>
+        <div class="menu" id="toggle-Button">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+    </header>
+    <section class="banner">
+        <div class="textBx">
+            <h2>Hello, Here is<br><span>Jim.</span></h2>
+            <h3>A Computer Science Student From University of Surrey</h3>
+            <a href="<%= about_index_path %>" class="btn">About Me</a>
+        </div>
+    </section>
+    <script>
+        const toggleButton = document.getElementById('toggle-Button');
+        const naviList = document.getElementById('navi-list');
+    
+        toggleButton.addEventListener('click', () => {
+            naviList.classList.toggle('active');
+        })
+    </script>

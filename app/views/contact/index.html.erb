@@ -1,0 +1,20 @@
+<head>
+  <%# contact.loading scss%>
+  <%= stylesheet_link_tag 'contact' %>
+  <%#Controller contact.loading scss%>
+  <%= stylesheet_link_tag params[:controller] %>
+</head>
+<div id="logo" style="width: 100%;"> 
+    <a href="<%= root_path %>"><img class="logo" src="<%= asset_path 'logo.png' %>" /></a>
+</div>
+<form class="form">
+    <h2>CONTACT US</h2>
+    <p type="Name:"><input placeholder="Your name"></p>
+    <p type="Email:"><input placeholder="e.g: example@gmail.com"></p>
+    <p type="Message:"><input placeholder="Please write your message here"></p>
+    <button>Send Message</button>
+    <div class="info">
+      <span class="phone"></span>+44 7720 896787
+      <span class="email"></span>lewiskai0416@gmail.com
+    </div>
+</form>

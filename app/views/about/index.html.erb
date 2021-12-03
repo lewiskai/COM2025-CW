@@ -1,0 +1,60 @@
+<head>
+  <%# about.loading scss%>
+  <%= stylesheet_link_tag 'about' %>
+  <%#Controller about.loading scss%>
+  <%= stylesheet_link_tag params[:controller] %>
+  <%= stylesheet_link_tag "about", "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" %>
+</head>
+<div id="workexperience" class="sectionClass">
+    <div id="logo" style="width: 100%;"> 
+    <a href="<%= root_path %>">
+        <img class="logo" src="<%= asset_path 'logo.png' %>" />
+    </a>
+    </div>
+    <div class="row ">
+      <div class="sectiontitle">
+        <h2>About Me</h2>
+        <span class="headerLine"></span>
+      </div>
+      <div class="fullWidth eight columns">
+        <ul class="cbp_tmtimeline">
+            <li>
+                <div class="cbp_tmicon cbp_tmicon-screen">
+                    <i class="faPra fa-briefcase"></i>
+                </div>
+                <div class="cbp_tmlabel wow fadeInRight animated">
+                    <h3>Computer Science BSc</h3>
+                    <h4><i class="fa fa-flag"></i>University of Surrey, Guildford, Surrey, United Kingdom</h4>
+                    <div class="date"><i class="fa fa-calendar"></i>September 2020 - Present</div>
+                    <p class="projectParagraph">Currently on 2nd year, Learning Computer Science.</p>
+                </div>
+            </li>
+            <li>
+                <div class="cbp_tmicon cbp_tmicon-phone">
+                    <i class="faPra fa-briefcase"></i>
+                </div>
+            <div class="cbp_tmlabel wow fadeInRight animated">
+                <h3>Web developer</h3>
+            <div class="date">
+                <i class="fa fa-calendar"></i>July 2021 - September 2021
+            </div>
+                <h4><i class="fa fa-flag"></i>M.I.T SKILLS Company, Woking, Surrey, United Kingdom</h4>
+                <p class="projectParagraph">Rebuild the whole web system including front and end, UI, Database rebuild and transfer.</p>
+            </div>
+          </li>
+            <li>
+            <div class="cbp_tmicon cbp_tmicon-mail">
+              <i class="faPra fa-briefcase"></i>
+            </div>
+            <div class="cbp_tmlabel wow fadeInRight animated">
+              <h3>Still Model</h3>
+              <h4><i class="fa fa-flag"></i>Ethos Model, London</h4>
+              <div class="date"><i class="fa fa-calendar"></i>July 2021 - Present</div>
+              <p class="projectParagraph">Currently a model for Still photography</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
