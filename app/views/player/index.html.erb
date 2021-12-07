@@ -1,12 +1,38 @@
 <head>
-  <%# player.loading scss%>
-  <%= stylesheet_link_tag 'player', 'main' %>
+  <%# player.loading scss css%>
+  <%= stylesheet_link_tag 'player', 'main', 'navbar' %>
   <%#Controller player.loading scss%>
   <%= stylesheet_link_tag params[:controller] %>
 </head>
-<div id="logo" style="width: 100%;"> 
-      <a href="<%= root_path %>"><img class="logo" src="<%= asset_path 'logo.png' %>" /></a>
-    </div>
+<header class="header">
+      <nav class="navbar">
+          <div id="logo" style="width: 100%;"> 
+              <a href="<%= root_path %>">
+                  <img class="logo" src="<%= asset_path 'logo.png' %>" />
+              </a>
+          </div>
+          <ul class="nav-menu">
+              <li class="nav-item">
+              <a href="<%= player_index_path %>">Project</a>
+              </li>
+              <li class="nav-item">
+                  <a href="<%= gallery_index_path %>">Gallery</a>
+              </li>
+              <li class="nav-item">
+                  <a href="<%= about_index_path %>">About</a>
+              </li>
+              <li class="nav-item">
+                  <a href="<%= contact_index_path %>">Contact</a>
+              </li>
+          </ul>
+          <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </div>
+      </nav>
+    </header>
+
     <div class="wrapper" id="app">
       <div class="player">
         <div class="player__top">
@@ -63,7 +89,7 @@
         Contact us
       </a>
     </div>
-
+  
     <svg xmlns="http://www.w3.org/2000/svg" hidden xmlns:xlink="http://www.w3.org/1999/xlink">
       <defs>
         <symbol id="icon-heart-o" viewBox="0 0 32 32">
